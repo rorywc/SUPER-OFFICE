@@ -3,39 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Super Office</title>
-<meta name="description" content="Super Office is a research-based architecture practice creating enduring and responsive buildings for people and place.">
+<title>Super Office — Rory Wilson-Cartwright, Architecture, Sydney</title>
+<link rel="canonical" href="https://superoffice.world/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23111'/></svg>">
+<meta name="description" content="Super Office is a Sydney architecture practice designing homes, apartments and buildings across Australia and New Zealand. Research-based, detail-driven.">
 <meta name="author" content="Rory Wilson-Cartwright">
-<meta property="og:title" content="Super Office">
-<meta property="og:description" content="A research-based architecture practice creating enduring and responsive buildings for people and place.">
-<meta property="og:image" content="images/hfc-14.webp">
+<meta name="robots" content="index, follow">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+<meta property="og:title" content="Super Office — Rory Wilson-Cartwright, Architecture, Sydney">
+<meta property="og:description" content="A research-based architecture practice creating enduring and responsive buildings for people and place across Oceania and beyond.">
+<meta property="og:image" content="https://superoffice.world/images/hfc-16.jpeg">
+<meta property="og:url" content="https://superoffice.world/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Super Office">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Super Office">
-<meta name="twitter:description" content="A research-based architecture practice creating enduring and responsive buildings for people and place.">
+<meta name="twitter:title" content="Super Office — Rory Wilson-Cartwright, Architecture, Sydney">
+<meta name="twitter:description" content="A research-based architecture practice based in Sydney, Eora, creating enduring and responsive buildings for people and place across Oceania and beyond.">
+<meta name="twitter:image" content="https://superoffice.world/images/hfc-16.jpeg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "additionalType": "https://schema.org/LocalBusiness",
+  "name": "Super Office",
+  "description": "Super Office is a research-based architecture practice creating enduring and responsive buildings for people and place. Working across scales and typologies from Sydney, Eora, with projects extending across Oceania and beyond.",
+  "url": "https://superoffice.world",
+  "logo": "https://superoffice.world/images/hfc-16.jpeg",
+  "image": "https://superoffice.world/images/hfc-16.jpeg",
+  "telephone": "+61494150234",
+  "email": "hello@superoffice.world",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sydney",
+    "addressRegion": "NSW",
+    "addressCountry": "AU"
+  },
+  "areaServed": ["Australia", "New Zealand", "Oceania"],
+  "sameAs": ["https://instagram.com/superoffice.world"],
+  "founder": {
+    "@type": "Person",
+    "name": "Rory Wilson-Cartwright",
+    "jobTitle": "Director",
+    "hasCredential": "B.A.S, M.Arch (Prof), NZRAB 6594, NSW ARB 13071"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Architecture & Design Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Architecture"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Furniture Design"}}
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "House for Camping",
+    "description": "A house sited on the boundary of Abel Tasman National Park, organised as a courtyard typology within a regenerating beech-podocarp forest in New Zealand.",
+    "dateCreated": "2025",
+    "locationCreated": {"@type": "Place", "name": "Abel Tasman, New Zealand"},
+    "creator": {"@type": "Organization", "name": "Super Office"},
+    "image": "https://superoffice.world/images/hfc-16.jpeg",
+    "url": "https://superoffice.world"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Apartment in Surry Hills",
+    "description": "A 27m² apartment renovation in a 1960s brick building in Surry Hills, Sydney. A complete domestic interior within a minimal footprint.",
+    "dateCreated": "2025",
+    "locationCreated": {"@type": "Place", "name": "Surry Hills, Sydney, Australia"},
+    "creator": {"@type": "Organization", "name": "Super Office"},
+    "image": "https://superoffice.world/images/sh-09.jpg",
+    "url": "https://superoffice.world"
+  }
+]
+</script>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@300;400;700&display=swap');
-
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-  :root { --font: 'Archivo', sans-serif; --font-display: 'Archivo Black', sans-serif; }
+  :root { --font: 'Rubik', sans-serif; --font-display: 'Rubik', sans-serif; }
   html, body { width: 100%; height: 100%; overflow: hidden; overscroll-behavior: none; background: #0a0a0a; cursor: none; }
 
   /* CURSOR */
-  .cursor { position: fixed; pointer-events: none; z-index: 9999; transform: translate(-50%, -50%); font-size: 26px; line-height: 1; user-select: none; }
-  .cursor.drag { opacity: 0.7; transform: translate(-50%, -50%) scale(1.2); }
+  .cursor { position: fixed; pointer-events: none; z-index: 9999; width: 14px; height: 14px; background: #fff; border-radius: 50%; transform: translate(-50%, -50%); mix-blend-mode: difference; transition: transform 0.1s ease; }
+  .cursor.drag { transform: translate(-50%, -50%) scale(2); }
 
   /* INTRO */
-  #intro { position: fixed; inset: 0; background: #fff; z-index: 1000; display: flex; align-items: center; justify-content: center; transition: opacity 1s ease; }
+  #intro { position: fixed; inset: 0; background: #fff; z-index: 1000; display: flex; align-items: center; justify-content: center; transition: opacity 1s ease; overflow: hidden; }
   #intro.fade-out { opacity: 0; pointer-events: none; }
   #intro.gone { display: none; }
+
   .intro-wordmark {
-    font-family: var(--font-display); font-size: clamp(80px, 18vw, 999px);
-    color: #111; letter-spacing: -0.01em; text-transform: uppercase;
-    opacity: 0; filter: blur(80px);
-    animation: fuzzIn 3.2s cubic-bezier(0.22,1,0.36,1) 0.3s forwards;
-    text-align: center; line-height: 0.85; width: 100vw; padding: 0 3vw; word-break: break-word;
+    font-family: var(--font-display);
+    font-weight: 750;
+    font-variation-settings: 'wght' 750;
+    font-size: clamp(80px, 21vw, 999px);
+    color: #111; letter-spacing: -0.07em; text-transform: uppercase;
+    line-height: 0.75; text-align: center; width: 100vw; padding: 0 2vw;
   }
-  @keyframes fuzzIn { 0% { opacity:0; filter:blur(60px); } 40% { opacity:0.7; filter:blur(30px); } 100% { opacity:1; filter:blur(0px); } }
+  .intro-line { display: block; opacity: 0; filter: blur(20px); animation: fuzz 2s cubic-bezier(0.98,0,1,1) 0.1s both; }
+  @keyframes fuzz {
+    from { opacity: 0; filter: blur(20px); }
+    to   { opacity: 1; filter: blur(0); }
+  }
 
   /* TRACK — native horizontal scroll, no JS touching scroll position */
   #track {
@@ -50,6 +123,7 @@
   /* IMAGE PANELS */
   .panel { position: relative; height: 100vh; flex-shrink: 0; overflow: hidden; }
   .panel img { width: 100%; height: 100%; object-fit: cover; object-position: center center; display: block; filter: saturate(0.9) brightness(0.97); user-select: none; -webkit-user-drag: none; pointer-events: none; }
+  .panel video { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
   .panel--p  { width: calc(100vh * 0.72); }
   .panel--l  { width: calc(100vh * 1.38); }
   .panel--sq { width: 100vh; }
@@ -62,49 +136,94 @@
 
   /* UI */
   #ui { position: fixed; inset: 0; pointer-events: none; z-index: 100; }
-  #logo { position: absolute; top: 22px; left: 28px; font-family: var(--font-display); font-size: clamp(30px, 4vw, 52px); color: #fff; pointer-events: auto; line-height: 1; text-transform: uppercase; text-shadow: 0 1px 8px rgba(0,0,0,0.3); }
-  #contact { position: absolute; bottom: 26px; left: 28px; font-family: var(--font); font-size: 11px; font-weight: 300; line-height: 1.9; color: #fff; pointer-events: auto; text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
+  #logo { position: absolute; top: 22px; left: 28px; font-family: var(--font-display); font-weight: 750; font-size: clamp(24px, 5vw, 999px); color: #fff; pointer-events: auto; line-height: 1; text-transform: uppercase; letter-spacing: -0.07em; }
+  #contact { position: absolute; bottom: 26px; left: 28px; font-family: var(--font); font-size: 13px; font-weight: 700; line-height: 1.9; color: #fff; pointer-events: auto; }
   #contact a { color: inherit; text-decoration: none; }
-  #project-label { position: absolute; bottom: 26px; right: 32px; font-family: var(--font); font-size: 11px; font-weight: 300; letter-spacing: 0.06em; color: #fff; opacity: 0; transition: opacity 0.3s ease; text-align: right; text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
-  #scroll-hint { position: absolute; bottom: 52px; left: 50%; transform: translateX(-50%); font-family: var(--font); font-size: 10px; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; opacity: 1; transition: opacity 1.2s ease; white-space: nowrap; pointer-events: none; text-shadow: 0 1px 6px rgba(0,0,0,0.5); animation: hintPulse 2.4s ease-in-out infinite; }
+  #project-label { position: absolute; bottom: 26px; right: 32px; font-family: var(--font); font-size: 13px; font-weight: 400; line-height: 1.9; color: #fff; opacity: 0; transition: opacity 0.3s ease; text-align: right; }
+  #scroll-hint { position: absolute; bottom: 52px; left: 50%; transform: translateX(-50%); font-family: var(--font); font-size: 10px; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: #fff; opacity: 1; transition: opacity 1.2s ease; white-space: nowrap; pointer-events: none; animation: hintPulse 2.4s ease-in-out infinite; }
+  @media (max-width: 768px) {
+    #scroll-hint { top: 50%; bottom: auto; transform: translate(-50%, -50%); }
+  }
   #scroll-hint.hidden { opacity: 0; animation: none; }
   @keyframes hintPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
   #progress { position: fixed; bottom: 0; left: 0; height: 1px; background: rgba(255,255,255,0.4); width: 0%; z-index: 101; }
 
   /* INFO */
-  #info-btn { position: fixed; top: 22px; right: 32px; font-family: var(--font); font-size: 12px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: #fff; background: none; border: none; cursor: none; z-index: 300; padding: 6px 0 6px 8px; text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
-  #close-btn { position: absolute; top: 22px; right: 32px; font-family: var(--font); font-size: 12px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: #111; background: none; border: none; cursor: none; z-index: 10; padding: 6px 0 6px 8px; }
-  #info-overlay { position: fixed; inset: 0; background: #fff; z-index: 200; opacity: 0; pointer-events: none; transition: opacity 0.4s ease; display: flex; flex-direction: column; padding: 22px 28px 60px; overflow-y: auto; gap: 0; }
+  #info-btn { position: fixed; top: 22px; right: 32px; font-family: var(--font); font-size: 13px; font-weight: 700; color: #fff; background: none; border: none; cursor: none; z-index: 300; padding: 6px 0 6px 8px; }
+  #close-btn { position: absolute; top: 22px; right: 32px; font-family: var(--font); font-size: 13px; font-weight: 700; color: #111; background: none; border: none; cursor: none; z-index: 10; padding: 6px 0 6px 8px; }
+  #info-overlay { position: fixed; inset: 0; background: #fff; z-index: 200; opacity: 0; pointer-events: none; transition: opacity 0.4s ease; display: flex; flex-direction: column; padding: 22px 28px 60px; overflow-y: auto; gap: 0; scrollbar-width: none; }
+  #info-overlay::-webkit-scrollbar { display: none; }
   #info-overlay.open { opacity: 1; pointer-events: auto; }
-  #info-wordmark { font-family: var(--font-display); font-size: clamp(30px, 4vw, 52px); color: #111; text-transform: uppercase; line-height: 1; margin: 0; flex-shrink: 0; border: none; }
+  #info-wordmark { font-family: var(--font-display); font-weight: 750; font-size: clamp(24px, 5vw, 999px); color: #111; text-transform: uppercase; letter-spacing: -0.07em; line-height: 1; margin: 0; flex-shrink: 0; border: none; }
   .info-main { display: flex; gap: 0; align-items: flex-start; margin-top: 40px; }
-  .info-left { width: 40%; flex-shrink: 0; padding-right: 48px; }
+  .info-left { width: clamp(280px, 38vw, 500px); max-width: clamp(280px, 38vw, 500px); flex-shrink: 0; flex-grow: 0; }
   .info-right { flex: 1; display: flex; justify-content: flex-end; align-items: flex-start; padding-right: 20px; }
   .info-portrait { width: 320px; height: 380px; object-fit: cover; object-position: center 20%; display: block; flex-shrink: 0; }
-  .info-text { font-family: var(--font); font-size: 13px; font-weight: 400; line-height: 1.7; color: #111; margin-bottom: 20px; }
+  .info-text { font-family: var(--font); font-size: 13px; font-weight: 400; line-height: 1.7; color: #111; margin-bottom: 20px; text-align: left; }
   .info-text p { margin-bottom: 1em; } .info-text p:last-child { margin-bottom: 0; }
   .info-text a { color: inherit; text-decoration: none; }
-  .info-creds { font-family: var(--font); font-size: 13px; font-weight: 700; line-height: 1.8; color: #111; }
-  .info-bottom { font-family: var(--font); font-size: 11px; font-weight: 700; line-height: 1.9; color: #111; position: absolute; bottom: 26px; left: 28px; }
+  .info-creds { font-family: var(--font); font-size: 13px; font-weight: 400; line-height: 1.8; color: #111; }
+  .info-bottom { font-family: var(--font); font-size: 13px; font-weight: 700; line-height: 1.9; color: #111; position: absolute; bottom: 26px; left: 28px; }
   .info-bottom a { color: inherit; text-decoration: none; }
+  .info-bottom-right { position: absolute; bottom: 26px; right: 28px; text-align: right; }
+  .project-btn { display: block; font-family: var(--font); font-size: 13px; font-weight: 700; line-height: 1.9; color: #111; background: none; border: none; cursor: none; padding: 0; text-align: right; width: 100%; transition: opacity 0.25s ease; text-decoration: underline; text-underline-offset: 3px; }
+  .project-btn.hidden { opacity: 0; pointer-events: none; }
+  .project-popup { position: absolute; bottom: calc(100% + 8px); right: 0; width: clamp(280px, 38vw, 500px); max-height: calc(100vh - 160px); overflow-y: auto; scrollbar-width: none; text-align: left; font-family: var(--font); font-size: 13px; font-weight: 400; line-height: 1.7; color: #111; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity 0.35s ease, transform 0.35s ease; padding-bottom: 4px; }
+  .project-popup::-webkit-scrollbar { display: none; }
+  .project-popup.open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+  .project-popup-title { font-weight: 700; margin-bottom: 1em; display: block; opacity: 0; transform: translateY(20px); transition: opacity 0.35s ease 0.05s, transform 0.35s ease 0.05s; }
+  .project-popup.open .project-popup-title { opacity: 1; transform: translateY(0); }
+  .project-popup p { margin-bottom: 1em; }
+  .project-popup p:last-child { margin-bottom: 0; }
+  .info-main, .info-bottom, #close-btn { transition: filter 0.3s ease; }
+  #info-overlay.project-open .info-main,
+  #info-overlay.project-open .info-bottom,
+  #info-overlay.project-open #close-btn { filter: blur(2px); }
+  #project-image { position: absolute; top: 110px; left: 70px; width: clamp(220px, 28vw, 420px); opacity: 0; pointer-events: none; transition: opacity 0.4s ease; z-index: 3; }
+  #project-image.visible { opacity: 1; }
+  #project-image img { width: 100%; height: auto; display: block; }
 
   /* MOBILE */
   @media (max-width: 768px) {
     html, body { cursor: auto; }
-    #info-overlay { padding: 22px 24px 40px; }
-    .info-main { flex-direction: column; }
-    .info-left { width: 100%; padding-right: 0; }
+    #project-label { max-width: 45vw; }
+    #info-overlay { padding: 22px 24px 60px; }
+    .info-main { flex-direction: column; margin-top: 40px; }
+    .info-left { width: 100%; max-width: 100%; padding-right: 0; }
     .info-right { justify-content: flex-start; padding-right: 0; margin-top: 24px; }
     .info-portrait { width: 100%; height: auto; max-height: 60vw; object-fit: cover; }
     #info-wordmark { font-size: clamp(24px, 8vw, 40px); }
-    .info-main { margin-top: 24px; }
-    .info-bottom { position: static; margin-top: 32px; }
+    .info-footer { position: static; margin-top: 40px; }
+    .info-bottom { position: static; margin-top: 0; }
+    .info-bottom-right { margin-top: 16px; }
+    /* Project popup — inline accordion on mobile */
+    #project-image { display: none; }
+    .info-bottom-right { position: static; text-align: left; margin-top: 40px; display: flex; flex-direction: column; }
+    .project-btn[data-project="hfc"] { order: 1; }
+    #popup-hfc { order: 2; }
+    .project-btn[data-project="sh"] { order: 3; }
+    #popup-sh { order: 4; }
+    .project-btn { text-align: left; cursor: auto; }
+    .project-popup { position: static !important; width: 100% !important; right: auto !important; bottom: auto !important; transform: none !important; opacity: 1 !important; overflow: hidden; max-height: 0 !important; padding: 0 !important; border: none; background: none; transition: max-height 0.6s cubic-bezier(0.4,0,0.2,1), padding 0.6s cubic-bezier(0.4,0,0.2,1); }
+    .project-popup.open { max-height: 2000px !important; padding: 12px 0 24px !important; }
+    #info-overlay.project-open .info-main,
+    #info-overlay.project-open .info-footer,
+    #info-overlay.project-open #close-btn { filter: none; }
+    /* Plan panels */
+    .panel--plan { padding: 24px; }
   }
 </style>
 </head>
 <body>
+<h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap">Super Office — Architecture Practice, Sydney</h1>
+<h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap">House for Camping, New Zealand, 2025 — Apartment in Surry Hills, Australia, 2025</h2>
 
-<div id="intro"><div class="intro-wordmark">Super Office</div></div>
+<div id="intro">
+  <div class="intro-wordmark" id="intro-wordmark">
+    <span class="intro-line">Super</span>
+    <span class="intro-line">Office</span>
+  </div>
+</div>
 <div class="cursor" id="cursor"></div>
 <div id="track"><div id="track-inner"></div></div>
 
@@ -123,91 +242,134 @@
 <div id="progress"></div>
 
 <div id="info-overlay">
-  <button id="close-btn" onclick="toggleInfo()">Back</button>
-  <div id="info-wordmark">Super Office</div>
+  <button id="close-btn" onclick="toggleInfo()">Close</button>
+  <div id="project-image"><img src="" alt=""></div>
   <div class="info-main">
     <div class="info-left">
       <div class="info-text">
         <p>Super Office is a research-based architecture practice creating enduring and responsive buildings for people and place. We see each project as an opportunity to contribute meaningfully to its social and physical context.</p>
         <p>Working across scales and typologies, we approach design with optimism, precision, and discipline. Our work prioritises conceptual clarity, careful material expression and is guided by a rigorous design process.</p>
-        <p>At its core, Super Office makes spaces, shaping environments that enrich daily life, strengthen connections, and endure over time.</p>
-        <p>Super office offers a full range of architectural services, for project enquires please contact hello@superoffice.world</p>
+        <p>Super Office operates from Sydney, Eora, with projects extending across Oceania and Europe. From this place, we work with a global outlook: attuned to the particular, connected to the world.</p>
+        <p>At its core, Super Office makes spaces, shaping environments that enrich daily life, strengthen connections, and endure over time. We offer a full range of design services, for project enquiries please contact <a href="mailto:hello@superoffice.world">hello@superoffice.world</a></p>
       </div>
       <div class="info-creds">
         Rory Wilson-Cartwright<br>
-        B.A.S, M.Arch (Prof),<br>
-        NZRAB 6594, NSW ARB 13071<br><br>
-        AIA Member
+        B.A.S, M.Arch(Prof)<br>
+        Registered Architect, NZRAB 6594, NSWARB 13071
       </div>
     </div>
-    <div class="info-right">
-      <img class="info-portrait" src="images/rory.webp" alt="Rory Wilson-Cartwright">
-    </div>
   </div>
+  <div class="info-footer">
   <div class="info-bottom">
     +61 494 150 234<br>
     <a href="mailto:hello@superoffice.world">hello@superoffice.world</a><br>
     <a href="https://instagram.com/superoffice.world" target="_blank">@superoffice.world</a>
   </div>
+  <div class="info-bottom-right">
+    <div class="project-popup" id="popup-hfc">
+      <span class="project-popup-title">House for Camping, New Zealand, 2025</span>
+      <p>Sited on the boundary of Abel Tasman National Park, this house sits a short distance from one of New Zealand's most celebrated coastlines, set within a regenerating beech-podocarp forest amongst mature kānuka.</p>
+      <p>To preserve the forest, the building occupies an existing clearing and is organised as a courtyard typology - pushing the structure to the forest edge and claiming the centre as a sun-filled outdoor room. We conceived the project as a series of rooms gathered beneath a single expansive roof.</p>
+      <p>This is not a house that behaves like a normal house. It asks something of the people who live in it - an attentiveness to outside, to weather, to the forest. Covered outdoor spaces frame apertures to the bush beyond, and double as sleeping areas for extended family - tents pitched beneath the eaves, sheltered but open to the outside.</p>
+      <p>The house is generous without being large. It bends and stretches to fit the rhythms of a big family without ever tipping into excess. The plan is tight and considered, the footprint small.</p>
+      <p>I lived on site for close to a full year during construction - off-grid, in a small temporary dwelling alongside the builder George and his apprentice Marty. We shared a kitchen and spent our days on the tools. It was an education in how buildings are actually made, and how a place changes as it comes together.</p>
+      <p>The house is fully self-sufficient - solar power, rainwater collection, independent of the grid. The clients are family.</p>
+      <p>Architecture - Patchwork Architecture, Project Architect - Rory Wilson-Cartwright (SUPER OFFICE), Structural - Spencer Holmes, Builder - Lovelock carpentry and building LTD.</p>
+    </div>
+    <div class="project-popup" id="popup-sh">
+      <span class="project-popup-title">Apartment in Surry Hills, Australia, 2025</span>
+      <p>The apartment looks directly onto a large tree. Its green dappled light shifts through the room across the day, and full-length mirror-faced wardrobe panels catch it, fold it back into the space, and keep it moving. At certain times of day it is almost like having the garden inside.</p>
+      <p>In a small apartment, light and air are everything. The challenge was making a proper bedroom — somewhere with its own identity — without closing the studio off and losing its cross ventilation. A raised cork platform with a recycled hardwood step separates the sleeping area just enough, while openings through the joinery wall keep light and air moving freely between the two spaces.</p>
+      <p>Almost everything was made by myself & my partner— the raised floor, the sliding daybed, the timber bench seat, the dining table, the bed base and headboard. The apartment keeps changing as it is lived in and developed further.</p>
+      <p>No curtains. The neighbourhood is too good to shut out — the sandstone terraces, the canopy trees, the neighbours hanging out their washing. That connection to the street is part of what makes Surry Hills worth living in.</p>
+      <p>The city is asking us a pretty direct question — do you actually need more space, or do you just need better space? And beyond the pragmatics, there's something more honest about it. You're in Surry Hills, one of the most connected and characterful neighbourhoods in Sydney, in a building with history, at a fraction of the footprint of a new development. Living small and well in the inner city isn't a compromise — it's actually a pretty compelling way to be in the world.</p>
+    </div>
+    <button class="project-btn" data-project="hfc" onclick="toggleProject('hfc')">House for Camping, New Zealand, 2025</button>
+    <button class="project-btn" data-project="sh" onclick="toggleProject('sh')">Apartment in Surry Hills, Australia, 2025</button>
+  </div>
+  </div>
 </div>
 
 <script>
+
 // INTRO
 (function() {
   const intro = document.getElementById('intro');
-  const MIN_MS = 3800, start = Date.now();
+  const MIN_MS = 5000, start = Date.now();
+  let dismissed = false;
   function dismiss() {
+    if (dismissed) return;
+    dismissed = true;
     const remaining = Math.max(0, MIN_MS - (Date.now() - start));
     setTimeout(() => { intro.classList.add('fade-out'); setTimeout(() => intro.classList.add('gone'), 1000); }, remaining);
   }
   const srcs = [
-    'images/hfc-14.webp','images/hfc-01.webp','images/hfc-02.webp','images/hfc-03.webp',
-    'images/hfc-04.webp','images/hfc-05.webp','images/hfc-06.webp','images/hfc-07.webp',
-    'images/hfc-08.webp','images/hfc-09.webp','images/hfc-10.webp','images/hfc-11.webp',
-    'images/hfc-12.webp','images/hfc-13.webp','images/hfc-15.webp','images/hfc-16.webp',
-    'images/hfc-17.webp','images/hfc-18.webp','images/sh-01.webp','images/sh-02.webp',
-    'images/sh-03.webp','images/sh-04.webp','images/sh-05.webp','images/sh-06.webp',
-    'images/sh-07.webp','images/sh-08.webp','images/sh-09.webp',
+    'images/hfc-01.jpeg','images/hfc-02.jpeg','images/hfc-03.jpeg','images/hfc-04.jpeg',
+    'images/hfc-05.jpeg','images/hfc-06.jpeg','images/hfc-07.jpeg','images/hfc-08.jpeg',
+    'images/hfc-10.jpeg','images/hfc-11.jpeg','images/hfc-12.jpeg',
+    'images/hfc-13.jpeg','images/hfc-14.jpeg','images/hfc-15.jpeg','images/hfc-16.jpeg',
+    'images/hfc-18.jpeg','images/hfc-19.jpeg','images/hfc-20.jpeg',
+    'images/hfc-21.jpeg','images/hfc-22.jpeg','images/hfc-23.jpeg',
+    'images/sh-01.jpg','images/sh-02.jpg','images/sh-03.jpg','images/sh-04.jpg',
+    'images/sh-05.jpg','images/sh-06.jpg','images/sh-07.jpg','images/sh-08.jpg','images/sh-09.jpg','images/sh-10.jpg',
+    'images/sh-01.gif','images/sh-02.gif','images/sh-03.gif',
   ];
   let loaded = 0;
-  srcs.forEach(src => { const img = new Image(); img.onload = img.onerror = () => { if (++loaded === srcs.length) dismiss(); }; img.src = src; });
-  setTimeout(dismiss, 12000);
+  srcs.forEach(src => {
+    const img = new Image();
+    img.onload = function() { if (++loaded >= srcs.length) dismiss(); };
+    img.onerror = function() { if (++loaded >= srcs.length) dismiss(); };
+    img.src = src;
+  });
+  setTimeout(dismiss, 10000);
 })();
 
 // CURSOR
 const cursorEl = document.getElementById('cursor');
-const globes = ['🌍','🌎','🌏']; let globeIdx = 0;
-cursorEl.textContent = globes[0];
-setInterval(() => { globeIdx = (globeIdx+1)%globes.length; cursorEl.textContent = globes[globeIdx]; }, 400);
 document.addEventListener('mousemove', e => { cursorEl.style.left = e.clientX+'px'; cursorEl.style.top = e.clientY+'px'; });
 
 // IMAGE DATA
-function rngShuffle(arr) {
-  const a=[...arr], rng=new Uint32Array(a.length); crypto.getRandomValues(rng);
-  for(let i=a.length-1;i>0;i--){const j=rng[i]%(i+1);[a[i],a[j]]=[a[j],a[i]];}
-  return a;
-}
 const P='House for Camping, New Zealand, 2025', Q='Apartment in Surry Hills, Australia, 2025';
-const hfc_ext_wide  = rngShuffle([{src:'images/hfc-02.webp',project:P,type:'p'},{src:'images/hfc-09.webp',project:P,type:'p'},{src:'images/hfc-16.webp',project:P,type:'p'},{src:'images/hfc-19.webp',project:P,type:'l'}]);
-const hfc_ext_close = rngShuffle([{src:'images/hfc-03.webp',project:P,type:'p'},{src:'images/hfc-05.webp',project:P,type:'p'},{src:'images/hfc-08.webp',project:P,type:'p'},{src:'images/hfc-13.webp',project:P,type:'p'},{src:'images/hfc-15.webp',project:P,type:'p'}]);
-const hfc_ext_dusk  = rngShuffle([{src:'images/hfc-01.webp',project:P,type:'l'},{src:'images/hfc-06.webp',project:P,type:'p'},{src:'images/hfc-07.webp',project:P,type:'p'},{src:'images/hfc-17.webp',project:P,type:'p'}]);
-const hfc_aerial    = [{src:'images/hfc-10.webp',project:P,type:'l'}];
-const hfc_int       = rngShuffle([{src:'images/hfc-04.webp',project:P,type:'p'},{src:'images/hfc-11.webp',project:P,type:'p'},{src:'images/hfc-12.webp',project:P,type:'p'},{src:'images/hfc-18.webp',project:P,type:'p'}]);
-function pick(pool){return pool.length?pool.shift():null;}
-const HFC=[pick(hfc_ext_wide),pick(hfc_int),pick(hfc_ext_dusk),pick(hfc_ext_close),pick(hfc_int),pick(hfc_ext_wide),pick(hfc_ext_close),pick(hfc_int),pick(hfc_aerial),pick(hfc_ext_dusk),pick(hfc_ext_close),pick(hfc_int),pick(hfc_ext_wide),pick(hfc_ext_dusk),pick(hfc_ext_close),pick(hfc_ext_wide),pick(hfc_ext_dusk),pick(hfc_ext_close),pick(hfc_ext_close),{src:'images/plan-hfc.webp',project:P,type:'plan'}].filter(Boolean);
-const sh_int=rngShuffle([{src:'images/sh-02.webp',project:Q,type:'p'},{src:'images/sh-03.webp',project:Q,type:'p',pos:'c20'},{src:'images/sh-04.webp',project:Q,type:'p'},{src:'images/sh-06.webp',project:Q,type:'p',pos:'c20'},{src:'images/sh-07.webp',project:Q,type:'p',pos:'left'},{src:'images/sh-08.webp',project:Q,type:'p',pos:'bottom'},{src:'images/sh-09.webp',project:Q,type:'p',pos:'c20'}]);
-const SH=[sh_int.shift(),{src:'images/sh-05.webp',project:Q,type:'l'},...sh_int,{src:'images/plan-sh.webp',project:Q,type:'plan'}].filter(Boolean);
-function interleave(a,b){
-  const result=[];let ai=0,bi=0,useA=Math.random()<0.5;
-  while(ai<a.length||bi<b.length){
-    const src=useA?a:b,idx=useA?ai:bi;
-    if(idx<src.length){const n=Math.min(2+Math.floor(Math.random()*2),src.length-idx);for(let k=0;k<n;k++)result.push({...src[idx+k],groupStart:k===0});if(useA)ai+=n;else bi+=n;}
-    useA=!useA;
-  }
-  return result;
-}
-const FIRST={src:'images/hfc-14.webp',project:P,type:'p',groupStart:true};
-const sequence=[FIRST,...interleave(HFC,SH)];
+const isMobileDevice=window.innerWidth<=768;
+const sequence=[
+  {src:'images/hfc-16.jpeg', project:P, type:'p',    groupStart:true},
+  {src:'images/hfc-video.mp4',project:P, type:'video'},
+  {src:'images/hfc-15.jpeg', project:P, type:'p'},
+  {src:'images/hfc-plan.jpg',project:P, type:'plan'},
+  {src:'images/hfc-19.jpeg', project:P, type:'p'},
+  {src:'images/sh-03.gif',   project:Q, type:'l',    groupStart:true},
+  {src:'images/sh-04.jpg',   project:Q, type:'p'},
+  {src:'images/sh-01.jpg',   project:Q, type:'p'},
+  {src:'images/sh-plan.jpg', project:Q, type:'plan'},
+  {src:'images/sh-06.jpg',   project:Q, type:'l'},
+  {src:'images/hfc-01.jpeg', project:P, type:'p',    groupStart:true},
+  {src:'images/hfc-02.jpeg', project:P, type:'p'},
+  {src:'images/hfc-04.jpeg', project:P, type:'p'},
+  {src:'images/hfc-06.jpeg', project:P, type:'p'},
+  {src:'images/hfc-07.jpeg', project:P, type:'p'},
+  {src:'images/hfc-10.jpeg', project:P, type:'p'},
+  {src:'images/hfc-20.jpeg', project:P, type:'p'},
+  {src:'images/sh-01.gif',   project:Q, type:'l',    groupStart:true},
+  {src:'images/sh-03.jpg',   project:Q, type:'p'},
+  {src:'images/hfc-18.jpeg', project:P, type:'p',    groupStart:true},
+  {src:'images/hfc-21.jpeg', project:P, type:'p'},
+  {src:'images/hfc-22.jpeg', project:P, type:'p'},
+  {src:'images/hfc-03.jpeg', project:P, type:'p'},
+  {src:'images/hfc-05.jpeg', project:P, type:'p'},
+  {src:'images/hfc-08.jpeg', project:P, type:'p'},
+  {src:'images/sh-02.gif',   project:Q, type:'p',    groupStart:true},
+  {src:'images/sh-02.jpg',   project:Q, type:'p'},
+  {src:'images/sh-07.jpg',   project:Q, type:'l'},
+  {src:'images/sh-10.jpg',   project:Q, type:'l'},
+  {src:'images/hfc-11.jpeg', project:P, type:'p',    groupStart:true},
+  {src:'images/hfc-12.jpeg', project:P, type:'p'},
+  {src:'images/hfc-13.jpeg', project:P, type:'p'},
+  {src:'images/hfc-14.jpeg', project:P, type:'p'},
+  {src:'images/hfc-23.jpeg', project:P, type:'l'},
+  {src:'images/sh-05.jpg',   project:Q, type:'l',    groupStart:true},
+  {src:'images/sh-08.jpg',   project:Q, type:'l'},
+  {src:'images/sh-09.jpg',   project:Q, type:'l'},
+].filter(d => !(isMobileDevice && d.type==='video'));
 
 // BUILD DOM — 4 copies for plenty of runway, no wrapping ever needed
 const track=document.getElementById('track');
@@ -216,8 +378,9 @@ function makePanel(d){
   const div=document.createElement('div');
   div.dataset.project=d.project;
   if(d.groupStart)div.dataset.groupStart='1';
-  if(d.type==='plan'){div.className='panel panel--plan';const img=document.createElement('img');img.src=d.src;img.alt='Floor plan';img.decoding='async';div.appendChild(img);}
-  else{div.className='panel panel--'+d.type;if(d.pos)div.classList.add('pos-'+d.pos);const img=document.createElement('img');img.src=d.src;img.decoding='async';div.appendChild(img);}
+  if(d.type==='plan'){div.className='panel panel--plan';const img=document.createElement('img');img.src=d.src;img.alt=d.project+' — floor plan';img.decoding='async';div.appendChild(img);}
+  else if(d.type==='video'){div.className='panel panel--l';const vid=document.createElement('video');vid.setAttribute('autoplay','');vid.setAttribute('muted','');vid.setAttribute('loop','');vid.setAttribute('playsinline','');vid.setAttribute('webkit-playsinline','');vid.muted=true;vid.src=d.src;div.appendChild(vid);vid.play().catch(()=>{});}
+  else{div.className='panel panel--'+d.type;if(d.pos)div.classList.add('pos-'+d.pos);const img=document.createElement('img');img.src=d.src;img.alt=d.project+' — architecture photography';img.decoding='async';div.appendChild(img);}
   return div;
 }
 let panelCount=0;
@@ -229,22 +392,24 @@ let panelCount=0;
   panelCount++;
 });
 
-const isMobile=window.matchMedia('(max-width: 768px) and (pointer: coarse)').matches;
+const isMobile=isMobileDevice;
 const projectLabel=document.getElementById('project-label');
 const progressEl=document.getElementById('progress');
 const scrollHint=document.getElementById('scroll-hint');
 let lastProject='';
+const visiblePanels=new Map();
 
-// IntersectionObserver — root is #track (the scrolling container)
+// IntersectionObserver — tracks all visible panels, picks closest to left edge
 const observer=new IntersectionObserver(entries=>{
-  let rightmost=-Infinity,active='';
   entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      const left=entry.boundingClientRect.left;
-      if(left>=0&&left>rightmost){rightmost=left;active=entry.target.dataset.project||'';}
-    }
+    if(entry.isIntersecting){visiblePanels.set(entry.target,entry.boundingClientRect.left);}
+    else{visiblePanels.delete(entry.target);}
   });
-  if(active&&active!==lastProject){lastProject=active;projectLabel.textContent=active;projectLabel.style.opacity='1';}
+  let best=null,bestAbs=Infinity;
+  visiblePanels.forEach((left,el)=>{
+    if(el.dataset.project&&Math.abs(left)<bestAbs){bestAbs=Math.abs(left);best=el;}
+  });
+  if(best){const proj=best.dataset.project;if(proj!==lastProject){lastProject=proj;projectLabel.textContent=proj;projectLabel.style.opacity='1';}}
 },{root:track,threshold:0.01});
 trackInner.querySelectorAll('.panel[data-project]').forEach(p=>observer.observe(p));
 
@@ -296,7 +461,7 @@ if(!isMobile){
     }
     if(disableScroll) window.setTimeout(() => { disableScroll = false; }, 40);
     progressEl.style.width = (scrollpos / (scrollWidth - clonesWidthHeight) * 100) + '%';
-    scrollHint.classList.add('hidden');
+    if(scrollpos > 80) scrollHint.classList.add('hidden');
   }
 
   // sideScroll() — Ellul verbatim
@@ -336,17 +501,62 @@ if(!isMobile){
   track.style.overflowY='scroll';
   trackInner.style.flexDirection='column';
   trackInner.style.width='100vw';
-  document.getElementById('scroll-hint').style.display='none';
+  document.getElementById('scroll-hint').textContent='↓ Scroll ↓';
+  track.addEventListener('scroll',function(){ if(track.scrollTop>80) scrollHint.classList.add('hidden'); },{passive:true});
   cursorEl.style.display='none';
   document.body.style.cursor='auto';
-  document.querySelectorAll('.panel').forEach(p=>{p.style.width='100vw';p.style.height='56vw';});
+  document.querySelectorAll('.panel').forEach(p=>{
+    p.style.width='100vw';
+    p.style.height='56vw';
+  });
   document.querySelectorAll('.panel--p,.panel--sq').forEach(p=>{p.style.height='133vw';});
+  document.querySelectorAll('.panel--l').forEach(p=>{p.style.height='75vw';});
+  document.querySelectorAll('.panel--plan').forEach(p=>{p.style.height='120vw';});
+  // Video autoplay via IntersectionObserver — most reliable on iOS
+  const videoObserver = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      const vid=entry.target.querySelector('video');
+      if(!vid)return;
+      if(entry.isIntersecting){vid.play().catch(()=>{});}
+      else{vid.pause();}
+    });
+  },{threshold:0.3});
+  document.querySelectorAll('.panel--l').forEach(p=>videoObserver.observe(p));
   window.addEventListener('keydown',e=>{if(e.key==='Escape')closeInfo();});
 }
 
 const infoBtn=document.getElementById('info-btn');
-function toggleInfo(){const open=document.getElementById('info-overlay').classList.toggle('open');infoBtn.style.display=open?'none':'';}
-function closeInfo(){document.getElementById('info-overlay').classList.remove('open');infoBtn.style.display='';}
+const overlay=document.getElementById('info-overlay');
+const projectImages={hfc:'images/hfc-15.jpeg',sh:'images/sh-09.jpg'};
+const projImg=document.getElementById('project-image');
+function closeProject(){document.querySelectorAll('.project-popup').forEach(p=>p.classList.remove('open'));document.querySelectorAll('.project-btn').forEach(b=>{b.style.display='';});overlay.classList.remove('project-open');projImg.classList.remove('visible');}
+function toggleInfo(){const open=overlay.classList.toggle('open');infoBtn.style.display=open?'none':'';if(!open)closeProject();}
+function closeInfo(){overlay.classList.remove('open');infoBtn.style.display='';closeProject();}
+function toggleProject(id){
+  const popup=document.getElementById('popup-'+id);
+  const isOpen=popup.classList.contains('open');
+  const anyOpen=document.querySelector('.project-popup.open');
+  closeProject();
+  if(!isOpen){
+    const delay=anyOpen?350:0;
+    if(anyOpen) overlay.classList.add('project-open');
+    setTimeout(function(){
+      popup.classList.add('open');
+      overlay.classList.add('project-open');
+      projImg.querySelector('img').src=projectImages[id];
+      projImg.classList.add('visible');
+      setTimeout(function(){
+        var btn=document.querySelector('[data-project="'+id+'"]');
+        if(btn)btn.style.display='none';
+      },0);
+    },delay);
+  }
+}
+document.addEventListener('click',function(e){
+  if(!overlay.classList.contains('project-open'))return;
+  if(e.target.classList.contains('project-btn'))return;
+  closeProject();
+});
 </script>
 </body>
 </html>
